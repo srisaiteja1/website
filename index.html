@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotcheck.com</title>
+<meta charset="UTF-8">
+
+<style>
+  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(17, 17, 17);
+  margin: 0;
+}
+
+.header {
+  font-family: Georgia, serif;
+  padding: 100px;
+  text-align: center;
+  background: hwb(184 74% 20%);
+  color: rgb(17, 17, 17);
+  background-image:url("download.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1200px 750px;
+  height: 700px;
+}
+
+.header h1 {
+  font-size: 500%;
+}
+.header h2{
+  font-size: 200%;
+}
+.p{
+  font-style: italic;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: rgb(237, 243, 238);
+  padding: 20px;
+  font-style: italic;
+}
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: rgb(237, 243, 238);
+  padding: 20px;
+  text-orientation: inherit;
+}
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.mySlides{
+  align-items: center;
+}
+.image{
+  margin-left: 70px;
+  padding-left: 100px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(21, 8, 4);
+  color: rgb(223, 219, 219);
+}
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Verification Portal</h1>
+  <h2><b>For students...</b></h2>
+</div>
+
+<div class="navbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="page2.html">Login</a>
+  <a href="page3.html">Sign-up</a>
+  <a href="page4.html">Contact Us</a>
+  
+</div>
+<div class="image">
+    <img class="mySlides" src="pic2.jpg" style="width:80%">
+    <img class="mySlides" src="pic1.jpg" style="width:80%">
+  </div>
+  
+  
+
+<div class="row">
+  <div class="side">
+    <h2>About portal</h2>
+    <h5>Logo</h5>
+    <img src="logo.png" width="200" height="200">
+    <p>Buying subscriptions for ott applications and many other applications have now become common among the younger generations and even more common among students. Students have a larger appetite for subscription-based apps and generally, it is more significant than their pockets. Applications whose revenue stream is dependent on the subscription model always try to offer a free period to get the customers habituated to their product. This works for many but for students, the price becomes a barrier. 
+</p>
+    
+  </div>
+  <div class="main">
+    <h2>OBJECTIVE OF OUR PROJECT</h2>
+    <h5>Project description</h5>
+    <img src="Screenshot 2022-10-07 181108.png">
+    
+    <p>our website help brands acquire customers who like their product. Companies prefer this model of price discrimination because students are the most sensitive to prices. Another reason why companies differ their prices for students is customer loyalty. Yet another perk of earning college students’ loyalty is that they’re natural brand ambassadors. If they like something, they share it with everyone they know. This strategy also helped apple in overtaking dell as the most popular brand in the student laptop segment.our project helps the service providers to overcome the problem of fake profiles. They can identify who must be given discounts and who must not be given. 
+</p>
+    <br>
+    <h2>Advancemets</h2>
+    
+    <img src="illustration-2.png"width="300" height="300">
+    <p>Actual advantage of our website</p>
+    <p>We provide a platform where we authenticate students and help brands get in touch with students to offer them discounts and use this as a more effective way of customer acquisition.Our platform will also save a few bucks for students who are the most price-sensitive demographic of customers for any brand.
+
+</p>
+  </div>
+</div>
+<footer>
+  <p>Author: <br>
+  <a href="page4.html">Help</a></p>
+</footer>
+<script>
+
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+</body>
+</html>
